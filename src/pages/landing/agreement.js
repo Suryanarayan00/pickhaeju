@@ -96,7 +96,6 @@ const AGREE_LABELS = [
   },
 ];
 const LandingAgreement = ({ route, navigation }) => {
-  alert('hello i m in')
   const { form } = route.params;
   const dispatch = useDispatch();
   const [agreements, setAgreements] = useState({
@@ -326,9 +325,7 @@ const LandingAgreement = ({ route, navigation }) => {
       <BottomButton
         disabled={
           !agreements.use ||
-          !agreements.privacy ||
-          !agreements.termsid ||
-          !agreements.termsphone
+          !agreements.privacy
         }
         onPress={handleSingUp}
         style={{ width: '100%' }}

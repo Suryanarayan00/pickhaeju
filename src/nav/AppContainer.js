@@ -86,7 +86,7 @@ import OptimizeRecomPopUp from '#components/OptimizeRecomPopUp';
 import colors from '#common/colors';
 import RecommendPopUp from '#components/RecommendPopUp';
 import { restApi, setToken } from '#common/api';
-import { me } from '#data/auth/actions';
+import { me } from '../data/auth/actions';
 
 import AsyncStorage from '@react-native-community/async-storage';
 import SimplePasswordCheck from '../pages/profile/SimplePasswordCheck';
@@ -1479,6 +1479,7 @@ const AppContainer = () => {
   const dispatch = useDispatch();
   const nav = useRef();
   const { principal, isLogOut } = useSelector((v) => v.auth, shallowEqual);
+  console.log(principal, 'this is principle and ')
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

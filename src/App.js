@@ -12,7 +12,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Provider } from 'react-redux';
 import { applyMiddleware, createStore } from 'redux';
 import thunk from 'redux-thunk';
-import AppContainer from '#nav/AppContainer';
+import AppContainer from './nav/AppContainer';
 import AppReducer from '#data/reducer';
 import AsyncStorage from '@react-native-community/async-storage';
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';

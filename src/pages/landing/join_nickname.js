@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { restApi, setToken } from '#common/api';
+import { restApi, setToken } from '../../common/api';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import InputBox from '#components/Input/InputBox';
 import DefaultButton from '#components/Button/DefaultButton';
 import colors from '#common/colors';
 import CheckLabel from '#components/CheckLabel';
-import isDisabled from 'react-native-web/dist/modules/AccessibilityUtil/isDisabled';
+// import isDisabled from 'react-native-web/dist/modules/AccessibilityUtil/isDisabled';
 import AsyncStorage from '@react-native-community/async-storage';
 import { useRoute } from '@react-navigation/native';
 import { me } from '#data/auth/actions';
@@ -82,8 +82,7 @@ const styles = StyleSheet.create({
 
   const isDisabled = !(nicknameResult && valid);
   const userInfo = route.params?.userInfo; 
-  console.log('userInfo');
-  console.log(userInfo);
+  console.log('userInfo',userInfo);
 
   const nicknameChecker = async (nickname) => {
     setNickname(nickname);

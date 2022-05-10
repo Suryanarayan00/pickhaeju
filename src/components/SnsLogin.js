@@ -66,9 +66,8 @@ const signInGoogle = async () => {
 try {
   await GoogleSignin.hasPlayServices();
   const userInfo = await GoogleSignin.signIn();
-  console.log('userInfo');
+  console.log('userInfo',userInfo);
  // alert(JSON.stringify(userInfo));
-  console.log(userInfo);
 
   const result = await googleSignUp(userInfo?.idToken);
   if (result?.data?.message == 'already registered') {
