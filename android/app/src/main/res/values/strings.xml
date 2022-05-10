@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">픽해주</string>
+    <string name="kakao_app_key">930cb8e9c572b17bd291a47db4fbc594</string>
+    <string name="appCenterCrashes_whenToSendCrashes" moduleConfig="true" translatable="false">DO_NOT_ASK_JAVASCRIPT</string>
+    <string name="appCenterAnalytics_whenToEnableAnalytics" moduleConfig="true" translatable="false">ALWAYS_SEND</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">EotnG8zXSKOola8iKNTlmvv-GwJ3NKEpRmkde</string>
+</resources>

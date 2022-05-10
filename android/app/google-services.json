@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "246176937000",
+    "firebase_url": "https://pickhaeju-9e5ca-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "pickhaeju-9e5ca",
+    "storage_bucket": "pickhaeju-9e5ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246176937000:android:5f9f814247b02a0516311d",
+        "android_client_info": {
+          "package_name": "com.pickhaeju"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246176937000-3a77vqv8b6eeouvq129sn1ggo11himgk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pickhaeju",
+            "certificate_hash": "65c4d290268f8c19a45eb78f8bf1947cf9ac88b5"
+          }
+        },
+        {
+          "client_id": "246176937000-ebgfckkk0864imgve5f964e2en31vhun.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pickhaeju",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "246176937000-fredmfammrvvm03ut44ulb5sl6e005ei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkD0iqNmObf0WFW4olsaPcOzjeN1OUsMA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246176937000-fredmfammrvvm03ut44ulb5sl6e005ei.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "246176937000-eiqm7tvda1hg59q8b6kq30v0h8ev27ij.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pickhaeju.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

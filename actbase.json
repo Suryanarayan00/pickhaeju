@@ -1,0 +1,12 @@
+{
+  "preset": "react-native",
+  "assets": {
+    "source": "assets",
+    "output": "assets.js"
+  },
+  "codepush": {
+    "ios": "Pichhaeju/ios",
+    "and": "Pichhaeju/android"
+  },
+  "version": 6
+}
