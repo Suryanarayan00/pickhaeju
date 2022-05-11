@@ -81,8 +81,8 @@ const styles = StyleSheet.create({
   const dispatch = useDispatch();
 
   const isDisabled = !(nicknameResult && valid);
-  const userInfo = route.params?.userInfo; 
-  console.log('userInfo',userInfo);
+  // const userInfo = route.params?.userInfo; 
+  // console.log('userInfo',userInfo);
 
   const nicknameChecker = async (nickname) => {
     setNickname(nickname);
@@ -116,8 +116,8 @@ const styles = StyleSheet.create({
    
     try {
        let {data} = await changeNickName(nickname);
-        console.log('response');
-        console.log(data);
+        // console.log('response');
+        console.log(data,'response');
        navigation.navigate('LandingFinish', {
           path: 'signUp',
           userInfo: data,

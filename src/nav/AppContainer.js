@@ -1239,8 +1239,9 @@ const MainStack = () => {
 const IntroStack = () => {
   const StackNav = useMemo(() => createStackNavigator(), []);
   const navigation = useNavigation();
+  const { principal} = useSelector((v) => v.auth, shallowEqual);
   return (
-    <StackNav.Navigator screenOptions={StackOptions}>
+    <StackNav.Navigator initialRouteName={principal?'JoinNickname':'LandingIndex'} screenOptions={StackOptions}>
       <StackNav.Screen
         name={'LandingIndex'}
         component={LandingIndex}
@@ -1515,7 +1516,7 @@ const AppContainer = () => {
             headerShown: false,
             headerTransparent: true,
           }}
-          initialRouteName={principal ?'MainStack' : isLogOut ? 'UserExistStack' : 'IntroStack'}
+          initialRouteName={(principal&& principal?.name!='') ?'MainStack' : isLogOut ? 'UserExistStack' : 'IntroStack'}
          //initialRouteName={principal ?'IntroStack' : isLogOut ? 'UserExistStack' : 'IntroStack'}
         >
           <StackNav.Screen name={'IntroStack'} component={IntroStack} />
